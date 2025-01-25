@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!--here is my link to the bootsrap file-->
+<link href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+            rel="stylesheet">
+
+<!--link to intenal css-->
+<link rel="stylesheet" href="styles.css">
+
+    <title>Week 3 coding project</title>
+
+    <!--within this style tag is CSS code for the Irish flag pulled off of chat gpt in a mentor session-->
+    <style>
+        body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        }
+    
+        /* Irish flag background */
+        .flag {
+        position: fixed; /* Fix the flag in place */
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh; /* Full viewport height */
+        background:
+            linear-gradient(
+            to right,
+              #169B62 33.33%, /* Green */
+              #FFFFFF 33.33% 66.66%, /* White */
+              #FF883E 66.66% 100% /* Orange */
+            );
+          z-index: -1; /* Place it behind the content */
+        }
+    
+        /* Content container */
+        .content {
+        position: relative; /* Ensure it's above the flag */
+        padding: 10px;
+        margin: 10px auto;
+          z-index: 1; /* Above the background */
+        border-radius: 3px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        }
+
+
+    </style>
+    
+</head>
+
+
+
+<body>
+
+    <div class="flag"></div>
+
+
+<!--here is my bootstrap navbar-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+        <a class="navbar-brand" href="#">Welcome to O'Goodies</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <!--linking all my pages together through the navbar-->
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            <a class="nav-link" href="about.html">About</a>
+            <a class="nav-link" href="pricing.html">Pricing</a>
+            <a class="nav-link" href="contact.html">Contact</a>
+            </div>
+        </div>
+        </div>
+    </nav>
+
+    <div class="content">
+        <header class="jumbotron">
+        <h1 id="h1">O'Goodies Irish Pub</h1>
+        <p>Wishing you the happiness of a leprechaun’s gold, and a day of songs of love that will never grow old!</p>
+        </header>
+    </div>
+
+    <br><br><br><br><br>
+
+    <div>
+    <img height="400px" src="https://scontent-msp1-1.xx.fbcdn.net/v/t39.30808-6/470179781_122128318994482658_7535942856732408145_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=2_7LEODh51IQ7kNvgHw63h8&_nc_zt=23&_nc_ht=scontent-msp1-1.xx&_nc_gid=AIQkhl1yHuEGSTeC2OyQRqx&oh=00_AYCl-L09tiZH0_fgsJNpErmj95TtONjwE8n3puIJEczTmw&oe=679AECF6" class="center" alt="O'Goodies Irish Pub photo">
+    </div>
+
+    <br><br><br><br><br>
+
+    <div>
+    <p id="p1"> May your glass be ever full, may the roof over your head be always strong and may you be in heaven half an hour before the devil knows you're dead.</p>
+    <img height="600px" src="https://scontent-msp1-1.xx.fbcdn.net/v/t39.30808-6/473118412_122133516296482658_3105450987550768935_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=111&ccb=1-7&_nc_sid=833d8c&_nc_ohc=WRHe9ZefAksQ7kNvgFlQogj&_nc_zt=23&_nc_ht=scontent-msp1-1.xx&_nc_gid=AeSVxa5pzHmFr_jIymcINPl&oh=00_AYC8Xgrvh8gSHraF-aWwNKruJ1LDz3gcPI_AmfGUF4VOkg&oe=679B129C" alt="Photos of Whiskey">
+    </div>
+
+
+    <br><br><br><br><br>
+    
+
+    <div>
+    <img height="600px" src="https://scontent-msp1-1.xx.fbcdn.net/v/t39.30808-6/471665212_122130827642482658_7818933730481777073_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_ohc=mk4WFsnDyJUQ7kNvgGKVrbf&_nc_zt=23&_nc_ht=scontent-msp1-1.xx&_nc_gid=Aeegs1EudtHngC4UlHBJf2t&oh=00_AYDDn4P6P6Zusz-zszhmRQ9IfeHCiEoXag2_8w0WXRDEKQ&oe=679B0D3C" class="right" alt="Bottle of Stagg Bourbon">
+    <p id="p2">Here’s to a sweetheart, a bottle, and a friend. The first beautiful, the second full, the last ever faithful.</p>
+    </div>
+
+    <br><br><br><br><br>
+
+
+
+    
+    <!--link to bootstrap JS and jquery-->
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

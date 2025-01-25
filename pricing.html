@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="styles.css">
+
+    <!--here is my link to the bootstrap css-->
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+            rel="stylesheet">
+
+    <title>Week 3 coding project</title>
+
+    <!--within this style tag is CSS code for the Irish flag pulled off of chat gpt in a mentor session-->
+    <style>
+        body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        }
+    
+        /* Irish flag background */
+        .flag {
+        position: fixed; /* Fix the flag in place */
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh; /* Full viewport height */
+        background:
+            linear-gradient(
+            to right,
+              #169B62 33.33%, /* Green */
+              #FFFFFF 33.33% 66.66%, /* White */
+              #FF883E 66.66% 100% /* Orange */
+            );
+          z-index: -1; /* Place it behind the content */
+        }
+    
+        /* Content container */
+        .content {
+          position: relative; /* Ensure it's above the flag */
+        padding: 10px;
+        margin: 10px auto;
+          z-index: 1; /* Above the background */
+        border-radius: 3px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="flag"></div>
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Welcome to O'Goodies</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            <a class="nav-link" href="about.html">About</a>
+            <a class="nav-link" href="pricing.html">Pricing</a>
+            <a class="nav-link" href="contact.html">Contact</a>
+            </div>
+        </div>
+        </div>
+    </nav>
+
+    <div class="content">
+    <header class="jumbotron text-center"> <!--bootstrap jumbotron-->
+        <h1 id="h1">Daily Happy Hour Specials</h1> 
+        <p>Come enjoy North Central Iowa's biggest selection of Bourbons and Whiskeys or enjoy a prefectly poured pint of Guiness</p>
+        <p>Domestic bottles and cans $2 from 3-7</p>
+    </header>
+    </div>
+    
+
+    <br><br><br><br><br><br>
+
+
+    <div class="content">
+    <table class="table table-bordered"> <!--here is my table code from bootstrap-->
+        <tr id="tr"> <!--Ive used css and id tags to give my table backround color to match the colors of the flag background-->
+            <th id="th">Drink</th>
+            <th id="th">Type</th>
+            <th id="th">Prices</th>
+        </tr>
+        <tr>
+            <td id="tr">Busch Light</td>
+            <td id="tr">bottle</td>
+            <td id="tr">$3.00</td>
+        </tr>
+        <tr>
+            <td id="tr">Busch Light</td>
+            <td id="tr">can</td>
+            <td id="tr">$3.00</td>
+        </tr>
+        <tr>
+            <td id="tr">Busch Light</td>
+            <td id="tr">draft</td>
+            <td id="tr">$2.00</td>
+        </tr>
+        <tr>
+            <td id="tr">Bud Light</td>
+            <td id="tr">bottle</td>
+            <td id="tr">$3.00</td>
+        </tr>
+        <tr>
+            <td id="tr">Bud Light</td>
+            <td id="tr">can</td>
+            <td id="tr">$3.00</td>
+        </tr>
+        <tr>
+            <td id="tr">Budwiser</td>
+            <td id="tr">can</td>
+            <td id="tr">$3.00</td>
+        </tr>
+        <tr>
+            <td id="tr">Coors Light</td>
+            <td id="tr">bottle</td>
+            <td id="tr">$3.00</td>
+        </tr>
+        <tr>
+            <td id="tr">Coors Light</td>
+            <td id="tr">can</td>
+            <td id="tr">$3.00</td>
+        </tr>
+        <tr>
+            <td id="tr">Coors Light</td>
+            <td id="tr">draft</td>
+            <td id="tr">$2.00</td>
+        </tr>
+        <tr>
+            <td id="tr">Guiness</td>
+            <td id="tr">draft</td>
+            <td id="tr">$5.00</td>
+        </tr>
+        <tr>
+            <td id="tr">Labatt Blue</td>
+            <td id="tr">bottle</td>
+            <td id="tr">$3.00</td>
+        </tr>
+        <tr>
+            <td id="tr">Rolling Rock</td>
+            <td id="tr">bottle</td>
+            <td id="tr">$3.00</td>
+        </tr>
+        <tr>
+            <td id="tr">Modelo</td>
+            <td id="tr">bottle</td>
+            <td id="tr">$4.00</td>
+        </tr>
+        <tr>
+            <td id="tr">Corona</td>
+            <td id="tr">bottle</td>
+            <td id="tr">$4.00</td>
+        </tr>
+        <tr>
+            <td id="tr">Tip the Cow</td>
+            <td id="tr">can</td>
+            <td id="tr">$4.00</td>
+        </tr>
+    </table>
+    </div>
+
+
+    <br><br><br><br><br>
+    <!--link to bootstrap JS and jquery-->
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

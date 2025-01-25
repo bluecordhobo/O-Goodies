@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+    
+    <title>Week 3 coding project</title>
+
+    <!--within this style tag is CSS code for the Irish flag pulled off of chat gpt in a mentor session-->
+    <style>
+        body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        }
+    
+        /* Irish flag background */
+        .flag {
+        position: fixed; /* Fix the flag in place */
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh; /* Full viewport height */
+        background:
+            linear-gradient(
+            to right,
+              #169B62 33.33%, /* Green */
+              #FFFFFF 33.33% 66.66%, /* White */
+              #FF883E 66.66% 100% /* Orange */
+            );
+          z-index: -1; /* Place it behind the content */
+        }
+    
+        /* Content container */
+        .content {
+          position: relative; /* Ensure it's above the flag */
+        padding: 10px;
+        margin: 10px auto;
+          z-index: 1; /* Above the background */
+        border-radius: 3px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="flag"></div>
+
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Welcome to O'Goodies</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link" href="about.html">About</a>
+                <a class="nav-link" href="pricing.html">Pricing</a>
+                <a class="nav-link" href="contact.html">Contact</a>
+                </div>
+            </div>
+            </div>
+        </nav>
+
+
+
+    <div class="container-fluid">
+    <header class="jumbotron text-center">
+        <div class="container-fluid">
+        <h1 id="h1">Contact Us:</h1>
+        <p class="lead"> Manger: Dan Petefish</p>
+        <p>Phone 123-456-7890</p>
+        <p>Like us on  <a href="https://www.facebook.com/profile.php?id=61564479744942&sk=photos"><button id="button">facebook</button></a></p>
+        </div>
+    </header>
+    </div>
+
+    <br><br><br><br><br><br>
+
+    <div>
+        <h4 id="h4">Let us know if you have any comments or queries!</h4>
+        <div class="input-group"> <!--here is my code for a form from bootstrap-->
+            <span id="tr" class="input-group-text">Name </span> <!--I'v again used css and id tags to change the background colors-->
+            <input id="tr" type="text" aria-label="First name" class="form-control" placeholder="First Name">
+            <input id="tr" type="text" aria-label="Last name" class="form-control" placeholder="Last Name">
+        </div>
+        <div class="content"> 
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Phone Number</label>
+            <input id="tr" type="phoneNumber" class="form-control" id="exampleFormControlInput1" placeholder="Phone Number">
+            <label for="exampleFormControlInput1" class="form-label">Email Address:</label>
+            <input id="tr" type="email" class="form-control" id="exampleFormControlInput1" placeholder="jimineycrickets@example.com">
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Comments and Queries:</label>
+            <textarea id="tr" class="form-control" id="exampleFormControlTextarea1" placeholder="Comments..." rows="3"></textarea>
+            <input id="inpt" type="submit" value="Submit">
+        </div>
+        </div>
+    </div>
+    
+</body>
+</html>
